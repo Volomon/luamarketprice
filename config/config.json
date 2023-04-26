@@ -1,0 +1,26 @@
+{
+    "Enabled": false,
+    "UpdateIntervalSecond": 1800,
+
+    "UpdateFilters": {
+        "Prices": "avg",
+        "LimitPriceDataWithinTime_Hour": 24,
+ 
+        "_Prices_COMMENT_": "Possible Values: lowest / avg / highest",
+        "_LimitPriceDataWithinTime_Hour_COMMENT1_": "set -1 for use all history data (around a week)",
+        "_LimitPriceDataWithinTime_Hour_COMMENT2_": "If there is no data to use within time, Using 24h avg price instead, skip the item to update if no data at all to use"
+    },
+
+    "UpdatePricesFromTradersForBannedItems": {
+        "Enabled": true,
+        "LowPricedItemsOnly": true,
+
+        "_COMMENT_": "If LowPricedItemsOnly is false, Every banned items are set by highest price from traders even it's more cheaper than before"
+    },
+
+    "Blacklist": [
+        "5449016a4bdc2d6f028b456f",
+        "569668774bdc2da2298b4568",
+        "5696686a4bdc2da3298b456a"
+    ]
+}
